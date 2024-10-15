@@ -7,7 +7,8 @@ S1, S0: Two select lines used to select one of the four input data lines.  <br>
 Output:  <br>
 Y: The output data line that represents the selected input. <br>
 
-`Aim`:
+`Aim`: <br>
+
 To design and simulate a 4x1 multiplexer using Verilog HDL and verify its functionality through simulation.
 
 `Apparatus Required:`
@@ -17,12 +18,12 @@ To design and simulate a 4x1 multiplexer using Verilog HDL and verify its functi
 
 `Code Implementation:`
 
-```module mux_4to1(input [3:0] d, input [1:0] sel, output y);
+``module mux_4to1(input [3:0] d, input [1:0] sel, output y);
   assign y = (sel == 2'b00) ? d[0] :
              (sel == 2'b01) ? d[1] :
              (sel == 2'b10) ? d[2] :
              d[3];
-endmodule```
+endmodule``
 
 ![WhatsApp Image 2024-10-15 at 18 16 36_fde7bb14](https://github.com/user-attachments/assets/b4173d46-3dc2-470e-afd3-ff9029d8f5f6)
 
