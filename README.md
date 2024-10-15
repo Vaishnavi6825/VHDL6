@@ -18,11 +18,11 @@ To design and simulate a 4x1 multiplexer using Verilog HDL and verify its functi
 
 `Code Implementation:`
 
-``module mux_4to1(input [3:0] d, input [1:0] sel, output y);
-  assign y = (sel == 2'b00) ? d[0] :
-             (sel == 2'b01) ? d[1] :
-             (sel == 2'b10) ? d[2] :
-             d[3];
+``module mux_4to1(input [3:0] d, input [1:0] sel, output y);<br>
+  assign y = (sel == 2'b00) ? d[0] :<br>
+             (sel == 2'b01) ? d[1] :<br>
+             (sel == 2'b10) ? d[2] :<br>
+             d[3];<br>
 endmodule``
 
 ![WhatsApp Image 2024-10-15 at 18 16 36_fde7bb14](https://github.com/user-attachments/assets/b4173d46-3dc2-470e-afd3-ff9029d8f5f6)
